@@ -1,0 +1,12 @@
+file_format: "1"
+id: wonder58
+name: Wonder58
+type: shield
+url: https://github.com/AreYouConfused/zmk-wonder58/
+requires:
+  - seeed_xiao
+features:
+  - keys
+siblings:
+  - wonder58_left
+  - wonder58_right

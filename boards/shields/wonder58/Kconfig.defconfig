@@ -1,0 +1,17 @@
+if SHIELD_WONDER58_LEFT
+
+# Name must be less than 16 characters long!
+config ZMK_KEYBOARD_NAME
+    default "Wonder58"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+endif
+
+if SHIELD_WONDER58_LEFT || SHIELD_WONDER58_RIGHT
+
+config ZMK_SPLIT
+    default y
+
+endif

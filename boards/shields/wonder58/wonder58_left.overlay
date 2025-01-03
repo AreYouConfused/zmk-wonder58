@@ -1,0 +1,2 @@
+#include "wonder58.dtsi" // The shared dtsi file is included in the overlay
+

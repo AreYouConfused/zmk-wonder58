@@ -23,5 +23,3 @@ include:
     shield: wonder58_left
   - board: seeeduino_xiao_ble
     shield: wonder58_right
-  - board: seeeduino_xiao_ble # Replace with the Xiao-compatible board you're using
-    shield: tester_xiao

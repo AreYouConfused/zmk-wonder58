@@ -65,7 +65,7 @@
                 &none  &none  &none  &none  &none  &bt BT_SEL 0    &bt BT_SEL 1  &none  &none  &none  &none  &none  
                 &none  &none  &none  &none  &none  &bt BT_SEL 2    &bt BT_SEL 3  &none  &none  &none  &none  &none  
                 &none  &none  &none  &none  &none  &bt BT_SEL 4    &bt BT_CLR  &none  &none  &none  &none  &none  
-                &none  &none          &none  &none  &none          &none  &none  &none          &none  &none  
+                &none  &trans          &none  &none  &none          &none  &none  &trans          &none  &none  
             >;
         };
     };
@@ -80,12 +80,11 @@
      */
 
  / {
-    combos {
-        compatible = "zmk,combos";
-        combo_esc {
-            timeout-ms = <50>;
-            key-positions = <49 55>;
-            bindings = <&mo SETT>;
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+        tri_layer {
+            if-layers = <LOWER UPPER>;
+            then-layer = <SETT>;
         };
     };
 };

@@ -10,6 +10,17 @@
 #define SETT 3
 
 / {
+    behaviors {
+        del: backspace_delete {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp BSPC>, <&kp DEL>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+    };
+};
+
+/ {
     keymap {
         compatible = "zmk,keymap";
 
@@ -21,7 +32,7 @@
                 &kp TAB   &kp Q  &kp W  &kp F    &kp P     &kp B 				&kp J    &kp L     &kp U     &kp Y   &kp SEMI  &kp BSLH
                 &kp ESC   &kp A  &kp R  &kp S    &kp T     &kp G   				&kp M    &kp N     &kp E     &kp I   &kp O     &kp APOS
                 &kp LSHFT &kp Z  &kp X  &kp C    &kp D     &kp V 			    &kp K    &kp H     &kp COMMA &kp DOT &kp SLASH &kp RSHIFT
-                &kp LCTRL &mo LOWER 		&kp LALT &kp SPACE &kp LWIN     &kp ENTER &kp BSPC &mo UPPER 		     &kp RWIN  &kp RCTL
+                &kp LCTRL &mo LOWER 		&kp LALT &kp SPACE &kp LWIN     &kp ENTER &del &mo UPPER 		         &kp RWIN  &kp RCTL
             >;
         };
 

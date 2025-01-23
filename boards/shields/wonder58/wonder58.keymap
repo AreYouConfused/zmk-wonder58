@@ -51,22 +51,22 @@
         lower { 
             display-name = "Lower";
             bindings = <
-                &kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6          &kp F7  &kp F8  &kp F9  &kp F10 &kp F11 &kp F12
-                &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans  
-                &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans  
-                &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans  
-                &trans  &trans          &trans  &trans  &trans          &trans  &trans  &trans          &trans  &trans  
+                &trans  &trans  &trans  &trans  &trans  &trans          &trans  &kp KP_NUM &kp KP_SLASH  &kp KP_MULTIPLY &kp KP_MINUS &trans
+                &trans  &trans  &trans  &trans  &trans  &trans          &trans  &kp KP_N7  &kp KP_N8     &kp KP_N9       &kp KP_PLUS  &trans  
+                &trans  &trans  &trans  &trans  &trans  &trans          &trans  &kp KP_N4  &kp KP_N5     &kp KP_N6       &kp KP_ENTER &trans  
+                &trans  &trans  &trans  &trans  &trans  &trans          &trans  &kp KP_N1  &kp KP_N2     &kp KP_N3       &kp KP_DOT   &trans  
+                &trans  &trans          &trans  &trans  &trans          &trans  &kp KP_N0  &trans                        &trans       &trans  
             >;
         };
 
         upper { 
             display-name = "Upper";
             bindings = <
-                &kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6          &kp F7  &kp F8  &kp F9  &kp F10 &kp F11 &kp F12
-                &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans  
-                &trans  &trans  &trans  &trans  &trans  &trans          &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans  &trans  
-                &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans  
-                &trans  &trans          &trans  &trans  &trans          &trans  &trans  &trans          &trans  &trans  
+                &kp F1  &kp F2  &kp F3  &kp F4    &kp F5    &kp F6          &kp F7   &kp F8    &kp F9    &kp F10   &kp F11 &kp F12
+                &trans  &no     &no     &no       &no       &no             &kp HOME &kp PG_DN &kp PG_UP &kp END   &no     &no  
+                &trans  &no     &no     &kp MINUS &kp EQUAL &no             &kp LEFT &kp DOWN  &kp UP    &kp RIGHT &no     &no  
+                &trans  &no     &no     &kp LBKT  &kp RBKT  &no             &no      &no       &no       &no       &no     &trans  
+                &trans  &trans          &trans    &trans    &trans          &trans  &trans     &trans              &trans  &trans  
             >;
         };
 
@@ -74,10 +74,10 @@
             display-name = "Settings";
             bindings = <
                 &tog QWERTY  &none  &none  &none  &none  &out OUT_USB    &out OUT_BLE  &none  &none  &none  &none  &studio_unlock  
-                &none  &none  &none  &none  &none  &bt BT_SEL 0    &bt BT_SEL 1  &none  &none  &none  &none  &none  
-                &none  &none  &none  &none  &none  &bt BT_SEL 2    &bt BT_SEL 3  &none  &none  &none  &none  &none  
-                &none  &none  &none  &none  &none  &bt BT_SEL 4    &bt BT_CLR  &none  &none  &none  &none  &none  
-                &none  &trans          &none  &none  &none          &none  &none  &trans          &none  &none  
+                &none        &none  &none  &none  &none  &bt BT_SEL 0    &bt BT_SEL 1  &none  &none  &none  &none  &none  
+                &none        &none  &none  &none  &none  &bt BT_SEL 2    &bt BT_SEL 3  &none  &none  &none  &none  &none  
+                &none        &none  &none  &none  &none  &bt BT_SEL 4    &bt BT_CLR  &none  &none  &none  &none  &none  
+                &none        &trans          &none  &none  &none          &none  &none  &trans          &none  &none  
             >;
         };
     };

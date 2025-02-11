@@ -22,6 +22,13 @@
 };
 
 / {
+    soft_off_wakers {
+        compatible = "zmk,soft-off-wakeup-sources";
+        wakeup-sources = <&kscan0>;
+    };
+};
+
+/ {
     keymap {
         compatible = "zmk,keymap";
 

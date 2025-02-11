@@ -25,7 +25,8 @@ include:
     cmake-args: -DCONFIG_ZMK_STUDIO=y
     artifact-name: wonder58_left STUDIO
   - board: seeeduino_xiao_ble
-    shield: wonder58_left rgbled_adapter
+    shield: wonder58_left rgbled_adapter raw_hid_adapter
+    snippet: zmk-usb-logging
     artifact-name: wonder58_left
   - board: seeeduino_xiao_ble
     shield: wonder58_right rgbled_adapter

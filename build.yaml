@@ -19,16 +19,16 @@
 #
 ---
 include:
-  - board: seeeduino_xiao_ble
-    shield: wonder58_left rgbled_adapter
-    snippet: studio-rpc-usb-uart
-    cmake-args: -DCONFIG_ZMK_STUDIO=y
-    artifact-name: wonder58_left STUDIO
+  #- board: seeeduino_xiao_ble
+  #  shield: wonder58_left rgbled_adapter
+  #  snippet: studio-rpc-usb-uart
+  #  cmake-args: -DCONFIG_ZMK_STUDIO=y
+  #  artifact-name: wonder58_left STUDIO
   - board: seeeduino_xiao_ble
     shield: wonder58_left rgbled_adapter
     artifact-name: wonder58_left
   - board: seeeduino_xiao_ble
     shield: wonder58_right rgbled_adapter
     artifact-name: wonder58_right
-  - board: seeeduino_xiao_ble
-    shield: settings_reset
+  #- board: seeeduino_xiao_ble
+  #  shield: settings_reset
